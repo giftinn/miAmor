@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Happy Mensivee!</title>
+</head>
+<body>
+    <div class="hearts-bg" id="heartsBackground"></div>
+
+    <div class="login-screen" id="loginScreen">
+        <div class="login-card">
+            <h1>A Special Message Awaits!!</h1>
+            <p>Enter the secret password to unlock you're Mensiversary surprise...</p>
+            <input type="password" class="password-input" id="passwordInput" placeholder="Enter password" />
+            <br>
+            <button class="enter-btn" onclick="checkPassword()">Enter</button>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #888;">Hint: The password is "tanggal jadian kita" ❤️</p>
+        </div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <div class="container">
+            <div class="header">
+                <h1>Happy One Month of Us</h1>
+                <p>A small milestone for us, sayang.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="nav-btn active" onclick="showPage('album')">Our Kind Of Love 🤍</button>
+                <button class="nav-btn" onclick="showPage('letter')">From My Heart, To Yours.</button>
+            </div>
+
+            <div class="page active" id="album">
+                <h2 style="color: #c44569; margin-bottom: 20px; text-align: center;">Our Beautiful Memories 💕</h2>
+                <div class="photo-grid">
+                    <div class="photo-item">
+                        <img src="src/1.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="src/2.JPG" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="src/3.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="src/4.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="src/5.jpeg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="src/6.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="letter">
+                <h2 style="color: #c44569; margin-bottom: 30px; text-align: center;">Happy first mensive, sayangku.</h2>
+                <div class="love-letter">
+                    <br>
+                    <p>I’ve been thinking about this a lot today, and i just wanna say i’m really happy we made it to our first month. And it’s kinda crazy to think we’ve made it to our first month already 🫠🫠 time moved fast, but at the same time, every moment with you actually felt full. I loved getting to know you more each day, the random talks, or the little moments. I’m really glad we’re together, sayang. Like genuinely, when i think about everything that led us here, i just feel thankful that we chose each other and decided to stay. Out of all the possibilities, you chose me and you still do :(</p><br>
+                    <p>Looking ahead, what i really want for us is to always choose communication first. If something ever feels heavy, confusing, or uncomfortable, i want us to talk about it instead of letting silence create distance. I don’t want us to guess what the other is feeling when we can just be honest. I believe we’re strong enough to face things side by side, not against each other. Even when conversations aren’t easy, i’d rather have honesty than quiet misunderstandings. </p><br>
+                    <p>I want us to keep learning each other, how we think, how we feel, what matters to us, and grow from that. As long as we keep talking and staying on the same side, i believe we’ll always find our way back to understanding. Thank you for this first month, baby. Thank you for your patience, your warmth, and the way you care. I’m proud of what we’re building, and I’m excited for everything that’s ahead of us.</p><br>
+                    <p> No matter what the future holds, i’m grateful that right now, it’s you beside me. I’m happy we’re here, and i’m willing to keep choosing us, again and again. Whatever comes next, i want to face it with you, my love. </p>
+                    <br>
+                  <p style="text-align: right;"> Forever yours,<br> Germain Rousse. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="file" class="hidden-file-input" id="photoUpload" accept="image/*" onchange="handlePhotoUpload(event)">
+    <input type="file" class="hidden-file-input" id="puzzleImageUpload" accept="image/*" onchange="handlePuzzleImageUpload(event)">
+    <script src="src/script.js" defer></script>
+</body>
+
+</html>
+
+
+
